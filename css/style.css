@@ -1,0 +1,56 @@
+header {
+	background-color:#333333;
+	color: #ff6700;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:0 24px;
+}
+.price {
+	color:#ff6700;
+}
+.card{
+	border: 1px solid #dddddd;
+	border-radius:8px;
+	padding: 16px;
+	box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+.card img{
+	width:150px;
+}
+.card:hover {
+	box-shadow:0 4px 16px rgba(0,0,0,0.2);
+}
+.product-list {
+	display: flex;
+	gap:20px;
+	justify-content:center;
+}
+.addBtn {
+	background-color:#ff6700;
+	color:white;
+	border:none;
+	padding: 8px 16px;
+	border-radius:4px;
+	cursor:pointer;
+}
+/*消除页面的白边，并且修改字体*/
+body {
+	margin : 0;
+	font-family: Arial , sans-serif;
+}
+/*导航字体为白色，去下划线，不贴着边框*/
+nav a {
+	color: white;
+	text-decoration: none;
+	margin-left: 16px;
+}
+/*导航里的链接悬停时变成橙色*/
+nav a:hover {
+	color: #ff6700
+}
+.cart-footer {
+	display : flex;
+	justify-content : space-between;
+	align-items: center;
+}

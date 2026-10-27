@@ -2,53 +2,45 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mi Shop</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-	<h1>Mi Shop</h1>
-	<nav>
-		<a href="#">Home</a>
-		<a href="#">Phones</a>
-		<a href="#">Laptops</a>
-	</nav>
-	<button id ="cartBtn">Cart(0) </button>
+		<h1>Mi Shop</h1>
+		<button id="cartBtn">Cart (0)</button>
 	</header>
+
 	<div id="cartPanel" hidden>
 		<h2>Your Cart</h2>
 		<ul id="cartList"></ul>
-	<div class="cart-footer">
-		<p id="cartTotal">Total : ￥0</p>
-		<button id="clearBtn">Clear</button>
-	</div>
-	</div>
-	<main>
-		<div class="product-list">
-			<div  class="card">
-				<img src="https://placehold.co/200x200" alt="Xiaomi 15">
-				<h3>Xiaomi 15</h3>
-				<p class="price">￥4,499</p>
-				<button class="addBtn">Add to Cart </button>
-			</div>
-			<div class="card">
-				<img src="https://placehold.co/200x200" alt="Redmi Note 14">
-				<h3>Redmi Note 14</h3>
-				<p class="price">￥1,399</p>
-				<button class="addBtn">Add to Cart </button>
-			</div>
-			
-			<div class="card">
-				<img src="https://placehold.co/200x200" alt="Xiaomi Pad 7">
-				<h3>Xiaomi Pad 7</h3>
-				<p class="price">￥1.999</p>
-				<button class="addBtn">Add to Cart </button>
-			</div>
+		<div class="cart-footer">
+			<p id="cartTotal">Total: ¥0</p>
+			<button id="clearBtn">Clear</button>
 		</div>
-	</main>
+	</div>
+
+	<div class="layout">
+		<aside class="sidebar">
+			<ul>
+				<li class="active" data-category="all">All</li>
+				<li data-category="phones">Phones</li>
+				<li data-category="tablets">Tablets</li>
+				<li data-category="laptops">Laptops</li>
+				<li data-category="wearables">Wearables</li>
+				<li data-category="smart-home">Smart Home</li>
+			</ul>
+		</aside>
+		<main>
+			<div class="product-list"></div>
+		</main>
+	</div>
+
 	<footer>
-	<p>© 2026 Mi Shop</p>
+		<p>© 2026 Mi Shop</p>
 	</footer>
+
 	<script src="js/main.js"></script>
 </body>
 </html>

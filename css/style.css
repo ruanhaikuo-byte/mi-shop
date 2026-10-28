@@ -163,3 +163,60 @@ footer {
 	color: #999999;
 	padding: 20px;
 }
+
+/* ===== 手机（屏幕 ≤ 600px）===== */
+@media (max-width: 600px) {
+
+	/* ① 侧边栏和商品区：横排 → 竖排（侧边栏到上面） */
+	.layout {
+		flex-direction: column;
+	}
+
+	/* ② 侧边栏：不再固定 200px，分类改成横排，可以左右滑 */
+	.sidebar {
+		width: auto;
+	}
+	.sidebar ul {
+		display: flex;
+		overflow-x: auto;
+	}
+	.sidebar li {
+		white-space: nowrap;
+		padding: 10px 16px;
+	}
+
+	/* ③ 商品区：内边距变小 */
+	main {
+		padding: 12px;
+	}
+	.product-list {
+		gap: 12px;
+	}
+
+	/* ④ 卡片：一行 2 张 */
+	.card {
+		width: calc(50% - 6px);
+		box-sizing: border-box;
+		padding: 10px;
+	}
+	.card img {
+		height: 140px;
+	}
+	.card h3 {
+		font-size: 16px;
+	}
+
+	/* ⑤ 购物车面板：左右各留 12px，不超出屏幕 */
+	#cartPanel {
+		left: 12px;
+		right: 12px;
+		width: auto;
+	}
+
+	header {
+		padding: 0 16px;
+	}
+	header h1 {
+		font-size: 22px;
+	}
+}
